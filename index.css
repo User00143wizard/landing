@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ 
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .video-background {
+      height: 50vh;
+      margin-left: 20px;
+    }
+  }
+ 
+  .hero {
+    /* background-image: linear-gradient(to bottom, #3498db, #2980b9); */
+    background-size: 100% 300px;
+    background-position: 0% 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin:auto; */
+    color: #080202;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.more-services {
+    /* background-color: #f7f7f7; */
+    padding: 50px 0;
+}
+
+.more-services h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 20px;
+}
+
+.service img {
+    width:90%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.service img:hover {
+    transform: scale(1.2); /* scale up the image more on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* add a more prominent shadow on hover */
+    border-radius: 20px; /* add a more rounded corner on hover */
+}
+
+.service h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta {
+    /* background-color: #3498db; */
+    padding: 50px 0;
+    color: #050000;
+}
+
+.cta h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cta button {
+    background-color: #01080c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta button:hover {
+    background-color: #555757;
+    /* box-shadow: rgba(0,0,0,0.5); */
+}
+/* Add styles for the logo */
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+    /* margin: 10px; */
+    padding: 0;
+}
+.about {
+    /* background-color: #f7f7f7; */
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 30px; */
+}
+
+.about .section-title {
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.about-image {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image:hover {
+    transform: scale(1.1);
+
+}
+
+.about-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #000407;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #f7f9f9;
+}
+
+.navbar-nav .nav-link {
+    position: relative; /* add relative positioning to the link */
+}
+
+.navbar-nav .nav-link::after {
+    content: ""; /* add an empty pseudo-element */
+    position: absolute; /* position the pseudo-element absolutely */
+    bottom: 0; /* position the pseudo-element at the bottom of the link */
+    left: 0; /* position the pseudo-element at the left of the link */
+    width: 0; /* set the initial width of the pseudo-element to 0 */
+    height: 2px; /* set the height of the pseudo-element to 2px */
+    background-color: #060606; /* set the background color of the pseudo-element */
+    transition:width 0.8s ease-in-out; /* add transition effect to the width */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* set the width of the pseudo-element to 100% on hover */
+}
+.projects {
+    /* light gray background */
+    padding: 20px; /* add some padding */
+    /* add a border */
+    /* add a rounded corner */
+    /* add a subtle shadow */
+
+  }
+
+  .projects h2 {
+    font-weight: bold; /* make the heading bold */
+    margin-top: 0; /* remove top margin */
+  }
+  
+  .projects .container {
+    max-width: 1200px; /* set a maximum width */
+    margin: 0 auto; /* center the container */
+  }
+  
+  .projects .row {
+    display: flex; /* make the row a flex container */
+    flex-wrap: wrap; /* allow the row to wrap */
+    justify-content: space-between; /* justify the content */
+  }
+  
+  .projects .col-md-4 {
+    flex-basis: 33.33%; /* set the width of each column */
+    margin: 20px; /* add some margin */
+  }
+  
+  .project {
+    background-color: #fff; /* white background */
+    padding: 20px; /* add some padding */
+    border: 1px solid #ddd; /* add a border */
+    border-radius: 10px; /* add a rounded corner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow */
+    transition: all   0.3s; /* add a transition effect */
+  }
+  
+  .project img {
+    width: 100%; /* make the image full width */
+    height: 150px; /* set the image height */
+    object-fit: cover; /* make the image cover the entire area */
+    border-radius: 10px 10px 0 0; /* add a rounded corner to the top */
+  }
+  .project:hover {
+    transform: scale(1.05); /* scale the project card on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* add a stronger shadow on hover */
+  }
+  .project h3 {
+    font-weight: bold; /* make the subheading bold */
+    margin-top: 0; /* remove top margin */
+  }
+  
+  .project p {
+    margin-bottom: 20px; /* add some space between the text and the button */
+  }
+  
+  .project .btn {
+    background-color: #01080f; /* make the button blue */
+    color: #fff; /* make the button text white */
+    padding: 10px 20px; /* add some padding */
+    border: none; /* remove the border */
+    border-radius: 10px; /* add a rounded corner */
+    cursor: pointer; /* make the button clickable */
+  }
+  
+  .project .btn:hover {
+    background-color: #000407; /* make the button darker blue on hover */
+  }
+  .contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(221, 216, 136, 0.1);
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(221, 216, 136, 0.1);
+}
+.submit{
+       margin: 20px;
+     margin-left: 200px;
+     
+}
+
+@media only screen and (min-width: 300px)and (max-width: 600px){
+    .about-image{
+      width: 90%;
+      /* margin-top: 10%; */
+      margin-top: 60px;
+     margin-right: 50px;
+      height: 150px;
+      /* margin-bottom: 2500px; */
+      
+      /* align-items: center; */
+    
+    }
+    .projects{
+       margin-left: 20px;
+    }
+    .about .section-title{
+        font-size: 30px;
+        margin-top: 550px;
+        /* padding: 10px; */
+        text-align: center;
+        /* margin-right: 20px; */
+    }
+    .hero{
+       margin-top: 20px;
+       text-align: center;
+    }
+     .contact-form{
+      margin-bottom: 300px;
+      margin-left: 50px;
+      padding: 20px;
+     }
+     .about-text{
+      margin-left: 30px;
+     }
+     .btn{
+      margin-left: 30px;
+     }
+   .cta{
+      margin-bottom: 250px;
+   }
+   .title{
+      margin-top: 300px;
+   }
+   .more-services{
+     margin-left: 50px;
+   }
+   .cta{
+       padding: 20px;
+       margin: 0;
+       /* margin-bottom: 250px; */
+   }
+   .submit{
+     /* text-align: center; */
+     margin-left: 60px;
+    
+   }
+}
+@media only screen and (min-width: 600px)and (max-width: 900px){
+    .about-image{
+
+       margin-top: 30px;
+
+    }
+    .about .section-title{
+       margin-top:300px;
+    }
+}
